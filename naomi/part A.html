@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <title>Website with GSAP and BOOTSTRAP</title>
+</head>
+<body>
+ 
+
+        <!-- typing effect section -->
+        <section class="header overflow-hidden">
+            <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><h1 style="color: #00ec00;">NAOMI</h1></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            
+                  <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About me</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Discover Me</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Education</a></li>
+                          <li><a class="dropdown-item" href="#">Hobbies</a></li>
+                          <li><a class="dropdown-item" href="#">Skills</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form role="search">
+                      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                  </div>
+                </div>
+              </nav>
+           <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="text-box">
+                  <h2 class="phone-message">You are not going to see the animations on a phone ;) lol tafta desktop au lapi</h2>
+       
+                    <h1>I am <span class="auto-type"></span></h1>
+                    <p>I am a financial advisor and an entreprenour who <br> knows what works best for any brand or company</p>
+                    <a href="index.html" class="btn btn-dark">Home Page</a>
+                    <a href="paralax.html" class="btn btn-dark">About Page</a>
+                </div>
+                
+            </div>
+            <div class="col-md-6 col-12  imaf">
+              <img src="./images/naomibanner-removebg-preview.png" class="user-img">
+            </div>
+           </div>
+    
+        </section>
+        
+     
+
+
+    <!-- javascript files -->
+<script src="/typed.js-master/lib/typed.js"></script>
+<script src="/gsap-public/minified/gsap.min.js"></script>
+<script src="/bootstrap-5.2.2-dist/js/bootstrap.bundle.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
