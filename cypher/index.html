@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/style-prefix.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cyper ecommerce website</title>
+</head>
+<body>
+        <!--header section of the website-->
+    <section class="header">
+            <!--navbar-->
+        <nav class="nav-up">
+            <a href="index.html"><img src="./images/logo main.png" class="logo"></a>
+            <h2 class="title-info">Free shipping for all orders above 60$</h2>
+            <div class="menu-icon">
+                <img src="./images/cart.png" class="menu" id="menuicon">
+            </div>
+        </nav>
+        <hr>
+            <!--pop-up-newsletter-->
+            <div class="modal" data-modal>
+                <div class="modal-close-overlay" data-modal-overlay></div>            
+                <div class="modal-content">           
+                  <button class="modal-close-btn" data-modal-close>
+                    <img src="./images/close.png" width="10px" height="10px">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>            
+                  <div class="newsletter-img">
+                    <img src="./images/newsletter.jpg" alt="subscribe newsletter" width="400" height="400">
+                  </div>            
+                  <div class="newsletter">           
+                    <form action="#">           
+                      <div class="newsletter-header">            
+                      <h3 class="newsletter-title">Subscribe Newsletter.</h3>            
+                        <p class="newsletter-desc">
+                          Subscribe to <b>Cyper</b> to get latest products and discount update.
+                        </p>            
+                      </div>           
+                      <input type="email" name="email" class="email-field" placeholder="Email Address" required>           
+                      <button type="submit" class="btn-newsletter">Subscribe</button>           
+                    </form>          
+                  </div>            
+                </div>           
+              </div>
+
+              <!--pop-up-box someone has bought-->
+              <div class="notification-toast" data-toast>
+                <button class="toast-close-btn" data-toast-close>
+                    <img src="./images/close.png" width="10px" height="10px">
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>          
+                <div class="toast-banner">
+                  <img src="./images/b1hover.png" alt="trouser" width="80" height="70">
+                </div>          
+                <div class="toast-detail">          
+                  <p class="toast-message">
+                    Someone Just bought
+                  </p>           
+                  <p class="toast-title">
+                    Dior trouser
+                  </p>            
+                  <p class="toast-meta">
+                    <time datetime="PT2M">2 Minutes</time> ago
+                  </p>          
+                </div>           
+              </div>
+
+              
+              <!--menu bar-->
+              <nav class="desktop-navigation-menu">
+                <div class="container">          
+                  <ul class="desktop-menu-category-list">         
+                    <li class="menu-category">
+                      <a href="#" class="menu-title">Home</a>
+                    </li>         
+                    <li class="menu-category">
+                      <a href="#" class="menu-title">Categories</a>         
+                      <div class="dropdown-panel">       
+                        <ul class="dropdown-panel-list">      
+                          <li class="menu-title">
+                            <a href="#">Electronics</a>
+                          </li>
+                          <li class="panel-list-item">
+                            <a href="#">Desktop</a>
+                          </li>        
+                          <li class="panel-list-item">
+                            <a href="#">Laptop</a>
+                          </li>      
+                          <li class="panel-list-item">
+                            <a href="#">Camera</a>
+                          </li>      
+                          <li class="panel-list-item">
+                            <a href="#">Tablet</a>
+                          </li>       
+                          <li class="panel-list-item">
+                            <a href="#">Headphone</a>
+                          </li>       
+                          <li class="panel-list-item">
+                            <a href="#">
+                              <img src="./images/electronics-banner-1.jpg" alt="headphone collection" width="250"
+                                height="119">
+                            </a>
+                          </li>         
+                        </ul>        
+                        <ul class="dropdown-panel-list">       
+                          <li class="menu-title">
+                            <a href="#">Men's</a>
+                          </li>         
+                          <li class="panel-list-item">
+                            <a href="#">Formal</a>
+                          </li>       
+                          <li class="panel-list-item">
+                            <a href="#">Casual</a>
+                          </li>       
+                          <li class="panel-list-item">
+                            <a href="#">Sports</a>
+                          </li>       
+                          <li class="panel-list-item">
+                            <a href="#">Jacket</a>
+                          </li>       
+                          <li class="panel-list-item">
+                            <a href="#">Sunglasses</a>
+                          </li>        
+                          <li class="panel-list-item">
+                            <a href="#">
+                              <img src="./images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                            </a>
+                          </li>       
+                        </ul>      
+                        <ul class="dropdown-panel-list">         
+                          <li class="menu-title">
+                            <a href="#">Women's</a>
+                          </li>        
+                          <li class="panel-list-item">
+                            <a href="#">Formal</a>
+                          </li>         
+                          <li class="panel-list-item">
+                            <a href="#">Casual</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">Perfume</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">Cosmetics</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">Bags</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">
+                              <img src="./images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                            </a>
+                          </li>
+          
+                        </ul>
+          
+                        <ul class="dropdown-panel-list">
+          
+                          <li class="menu-title">
+                            <a href="#">Electronics</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">Smart Watch</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">Smart TV</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">Keyboard</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">Mouse</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">Microphone</a>
+                          </li>
+          
+                          <li class="panel-list-item">
+                            <a href="#">
+                              <img src="./images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                            </a>
+                          </li>
+          
+                        </ul>
+          
+                      </div>
+                    </li>
+          
+                    <li class="menu-category">
+                      <a href="#" class="menu-title">Men's</a>
+          
+                      <ul class="dropdown-list">
+          
+                        <li class="dropdown-item">
+                          <a href="#">Shirt</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Shorts & Jeans</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Safety Shoes</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Wallet</a>
+                        </li>
+          
+                      </ul>
+                    </li>
+          
+                    <li class="menu-category">
+                      <a href="#" class="menu-title">Women's</a>
+          
+                      <ul class="dropdown-list">
+          
+                        <li class="dropdown-item">
+                          <a href="#">Dress & Frock</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Earrings</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Necklace</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Makeup Kit</a>
+                        </li>
+          
+                      </ul>
+                    </li>
+          
+                    <li class="menu-category">
+                      <a href="#" class="menu-title">Jewelry</a>
+          
+                      <ul class="dropdown-list">
+          
+                        <li class="dropdown-item">
+                          <a href="#">Earrings</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Couple Rings</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Necklace</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Bracelets</a>
+                        </li>
+          
+                      </ul>
+                    </li>
+          
+                    <li class="menu-category">
+                      <a href="#" class="menu-title">Perfume</a>
+          
+                      <ul class="dropdown-list">
+          
+                        <li class="dropdown-item">
+                          <a href="#">Clothes Perfume</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Deodorant</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Flower Fragrance</a>
+                        </li>
+          
+                        <li class="dropdown-item">
+                          <a href="#">Air Freshener</a>
+                        </li>         
+                      </ul>
+                    </li>          
+                    <li class="menu-category">
+                      <a href="#" class="menu-title">Awesome deals
+                      </a>
+                    </li>          
+                  </ul>          
+                </div>
+              </nav>
+              
+             <!--moving banner-->  
+             <div class="banner">
+                <div class="container">                 
+                 <div class="slideshow-container">          
+                  <div class="mySlides fade">
+                <div class="slider-item">
+                    <img src="./images/banner 1.jpg" alt="new fashion summer sale" class="banner-img">           
+                    <div class="banner-content">         
+                      <p class="banner-subtitle"> New fashion summer sale</p>           
+                      <h2 class="banner-title">Trending accessories</h2>                      
+                      <a href="#" class="banner-btn">Shop now</a>           
+                    </div>           
+                  </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="slider-item">           
+                    <img src="./images/banner 2.jpg " alt="modern sunglasses"   class="banner-img">           
+                    <div class="banner-content">            
+                      <p class="banner-subtitle">Sale Offer</p>         
+                      <h2 class="banner-title"> Modern sunglasses</h2>                
+                      <a href="#" class="banner-btn">Shop now</a>           
+                    </div>          
+                  </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="slider-item">           
+                    <img src="./images/banner 3.jpg" alt="women's latest fashion sale" class="banner-img">          
+                    <div class="banner-content">          
+                      <p class="banner-subtitle">Trending item</p>           
+                      <h2 class="banner-title">Women's latest fashion sale</h2>                   
+                      <a href="#" class="banner-btn">Shop now</a>          
+                    </div>          
+                  </div>
+            </div>           
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>           
+                </div>         
+              </div>
+    </section>
+    <!--awesome deals -->
+<section id="featured-section" class="awesome">
+    <div class="small-container">
+        <h2 class="title">Awesome deals</h2>
+        <div class="row">
+            <div class="col-4">
+               <img src="./images/aw1.png">
+            </div>
+            <div class="col-4">
+                <img src="./images/aw2.png">
+            </div>
+            <div class="col-4">
+                <img src="./images/aw3.png">
+            </div>
+            <div class="col-4">
+                <img src="./images/aw4.png">
+            </div>
+        </div>
+    </div>
+</section>
+   
+     <!--Budget buys-->
+        <div class="product-main">
+            <h2 class="title">Budget buys</h2>
+            <div class="product-grid">
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./images/b1.png" alt="Jeans" width="300" class="product-img default">
+                  <img src="./images/b1hover.png" alt="Jeans" class="product-img hover">
+                  <p class="showcase-badge">15%</p>                
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Jeans</a>
+                  <a href="#">
+                    <h3 class="showcase-title">everyday use Jeans.</h3>
+                  </a>
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+                </div>
+                </div>
+
+              <div class="showcase">       
+                <div class="showcase-banner">
+                  <img src="./images/b2.png" alt="Formal Shirt" class="product-img default"
+                    width="300">
+                  <img src="./images/b2hover.png" alt="Formal shirts" class="product-img hover"
+                    width="300">             
+                  <p class="showcase-badge angle black">sale</p>            
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category"> Formal shirt</a>           
+                  <h3>
+                    <a href="#" class="showcase-title">Pure Garment Dyed Cotton Shirt</a>
+                  </h3>             
+                  <div class="price-box">
+                    <p class="price">$45.00</p>
+                    <del>$56.00</del>
+                  </div>             
+                </div>             
+              </div>
+
+              <div class="showcase">              
+                <div class="showcase-banner">
+                  <img src="./images/b3.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="./images/b3hover.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Trousers</a>
+                  <h3>
+                    <a href="#" class="showcase-title">MEN Trousers</a>
+                  </h3>             
+                  <div class="price-box">
+                    <p class="price">$58.00</p>
+                    <del>$65.00</del>
+                  </div>           
+                </div>             
+              </div>
+
+              <div class="showcase">             
+                <div class="showcase-banner">
+                  <img src="./images/b4.png" alt="Dresses" class="product-img default"
+                    width="300">
+                  <img src="./images/b4hover.png" alt="Dresses" class="product-img hover"
+                    width="300">         
+                  <p class="showcase-badge angle pink">new</p>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Dresses</a>         
+                  <h3>
+                    <a href="#" class="showcase-title">Floral Wrap Midi Dress</a>
+                  </h3>
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$35.00</del>
+                  </div>             
+                </div>             
+              </div>
+
+              <div class="showcase">       
+                <div class="showcase-banner">
+                  <img src="./images/b5.png" alt="Loungewear" class="product-img default"
+                    width="300">
+                  <img src="./images/b5hover.png" alt="Loungewear" class="product-img hover"
+                    width="300">
+                </div>            
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Loungewear</a>             
+                  <h3>
+                    <a href="#" class="showcase-title">Loungewear for both men and women</a>
+                  </h3>
+                  <div class="price-box">
+                    <p class="price">$99.00</p>
+                    <del>$105.00</del>
+                  </div>             
+                </div>             
+              </div>
+
+              <div class="showcase">            
+                <div class="showcase-banner">
+                  <img src="./images/b6.png" alt="Bras and Briefs" class="product-img default"
+                    width="300">
+                  <img src="./images/b6hover.png" alt="Bras and Briefs" class="product-img hover"
+                    width="300">          
+                  <p class="showcase-badge angle black">sale</p>             
+                </div>
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Bras and Briefs</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Beatifull briefs for women</a>
+                  </h3>
+                  <div class="price-box">
+                    <p class="price">$150.00</p>
+                    <del>$170.00</del>
+                  </div>            
+                </div>           
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/b7.png" alt="Top and teas" class="product-img default"
+                    width="300">
+                  <img src="./images/b7hover.png" alt="Top and Teas" class="product-img hover" width="300">
+                </div>
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Top and Teas</a>            
+                  <h3>
+                    <a href="#" class="showcase-title">Beatifull Tea for women</a>
+                  </h3>
+                  <div class="price-box">
+                    <p class="price">$100.00</p>
+                    <del>$120.00</del>
+                  </div>
+                </div>          
+              </div>
+
+              <div class="showcase">         
+                <div class="showcase-banner">
+                  <img src="./images/b8.png" alt="Sweaters and Sweatshirts" class="product-img default"
+                    width="300">
+                  <img src="./images/b8hover.png" alt="Sweaters and Sweatshirts" class="product-img hover"
+                    width="300">              
+                  <p class="showcase-badge angle black">Limited offer</p>
+                </div>             
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Sweaters and Sweatshirts</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Womens Sweatshirt</a>
+                  </h3>
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$30.00</del>
+                  </div>             
+                </div>             
+              </div>
+            </div>
+          </div>
+
+          <!--sort by categories-->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">Shop By Categories</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c1.png" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Relaxed Short full Sleeve T-Shirt</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Clothes</a>
+
+                      <div class="price-box">
+                        <p class="price">$45.00</p>
+                        <del>$12.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c2.png" alt="girls pink embro design top" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Girls pnk Embro design Top</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Clothes</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$9.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c3.png" alt="black floral wrap midi skirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Black Floral Wrap Midi Skirt</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Clothes</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$76.00</p>
+                        <del>$25.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c4.png" alt="pure garment dyed cotton shirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Pure Garment Dyed Cotton Shirt</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Mens Fashion</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$68.00</p>
+                        <del>$31.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c5.png" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Winter wear</a>
+                
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$11.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c6.png" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Mens Winter Leathers Jackets</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Winter wear</a>
+                
+                      <div class="price-box">
+                        <p class="price">$32.00</p>
+                        <del>$20.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c7.png" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Mens Winter Leathers Jackets</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Jackets</a>
+                
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$25.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c8.png" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Better Basics French Terry Sweatshorts</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Shorts</a>
+                
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$10.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Trending</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c9.png" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Running & Trekking Shoes - White</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sports</a>
+            
+                      <div class="price-box">
+                        <p class="price">$49.00</p>
+                        <del>$15.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c10.png" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Trekking & Running Shoes - black</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sports</a>
+            
+                      <div class="price-box">
+                        <p class="price">$78.00</p>
+                        <del>$36.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c11.png" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Womens Party Wear Shoes</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Party wear</a>
+            
+                      <div class="price-box">
+                        <p class="price">$94.00</p>
+                        <del>$42.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c12.png" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Sports Claw Women's Shoes</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sports</a>
+            
+                      <div class="price-box">
+                        <p class="price">$54.00</p>
+                        <del>$65.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c13.png" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Air Trekking Shoes - white</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sports</a>
+            
+                      <div class="price-box">
+                        <p class="price">$52.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c14.png" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Boot With Suede Detail</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">boots</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c15.png" alt="men's leather formal wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Men's Leather Formal Wear shoes</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">formal</a>
+            
+                      <div class="price-box">
+                        <p class="price">$56.00</p>
+                        <del>$78.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c16.png" alt="casual men's brown shoes" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Casual Men's Brown shoes</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Casual</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top Rated</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c17.png" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Pocket Watch Leather Pouch</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$34.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c18.png" alt="silver deer heart necklace" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Silver Deer Heart Necklace</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Jewellery</a>
+            
+                      <div class="price-box">
+                        <p class="price">$84.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c19.png" alt="titan 100 ml womens perfume" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Titan 100 Ml Womens Perfume</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Perfume</a>
+            
+                      <div class="price-box">
+                        <p class="price">$42.00</p>
+                        <del>$10.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c20.png" alt="men's leather reversible belt" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Men's Leather Reversible Belt</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Belt</a>
+            
+                      <div class="price-box">
+                        <p class="price">$24.00</p>
+                        <del>$10.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c21.png" alt="platinum zircon classic ring" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">platinum Zircon Classic Ring</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">jewellery</a>
+            
+                      <div class="price-box">
+                        <p class="price">$62.00</p>
+                        <del>$65.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c22.png" alt="smart watche vital plus" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Smart watche Vital Plus</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$56.00</p>
+                        <del>$78.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c23.png" alt="shampoo conditioner packs" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">shampoo conditioner packs</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">cosmetics</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/c24.png" alt="rose gold peacock earrings" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Rose Gold Peacock Earrings</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">jewellery</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+          <!--offer-->
+<section id="offer">
+  <div class="small-container">
+      <div class="row">
+          <div class="col-2"><a href="Products.html"> <button type="button" class="button">Buy Now &#8594;</button></a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+          <!--footer-->
+<footer id="footer">
+    <div class="small-container">
+        <div class="row"> 
+            <div class="footer-col-2">
+                <img src="./images/logo white.png">
+   
+                <p>Only good quality products enter our shop, so we guarantee you the best of each. </p>
+            </div>
+            <img src="./images/payment.png" width="100%" height="100%" class="payment">
+            
+        </div>
+        <hr><p class="copyright">Copyright 2022 Made by Washington Maina</p>
+    </div>
+
+</footer>
+
+<script src="./script.js"></script>
+<script src="./icons/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+the name of the store is CYPHER
+
+Products image: www.myntra.com,
+banner   www.PEXELS.com

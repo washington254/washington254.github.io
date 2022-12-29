@@ -39,7 +39,22 @@ dark.addEventListener("click", () => {
         icon.src = "./assets/images/sun.png" ;
     }
 
-})
+});
+
+const headerimage = document.querySelector(".header-image");
+const hero = document.querySelector("#hero");
+
+headerimage.addEventListener("mouseover", func,false);
+headerimage.addEventListener("mouseout", func1,false);
+
+
+function func(){
+    // gsap.from("#hero",{duration:1,y:"-100%",src:"./assets/images/banner/hero2.png"})
+    hero.src = "./assets/images/banner/hero2.png" ;
+}
+function func1(){
+    hero.src = "./assets/images/banner/hero.png" ;
+}
 
     
         
