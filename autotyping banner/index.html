@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- this is important meta data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <title>PORTFOLIO WEBSITE</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <!-- this is the navigation -->
+            <a href="index.html"><img src="./images/logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">SERVICES</a></li>
+            </ul>
+            <img src="./images/menu.png" class="menu-icon">
+        </nav>
+        <div class="text-box">
+            <!-- this is the text box -->
+            <h1>I am <span class="auto-type"></span></h1>
+            <p>Talk to me if you are looking for a professional looking <br> website for your company or organisation</p>
+            <a href="#">Contact me</a>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <img src="./images/banner.png" class="user-img">
+
+    </section>
+    
+    <script src="./typed.js-master/lib/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        //this is the script for typing effect
+        var typed = new Typed(".auto-type", {
+            strings: ["Juan kim aliyah","a website developer","available for hire"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+</body>
+</html>
