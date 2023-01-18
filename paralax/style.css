@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* the banner section code */
+.zoom{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    background: url(./images/stars\ bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.zoom::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: linear-gradient(transparent,#232323);
+}
+.zoom #layer1{
+    position: absolute;
+    left: 0%;
+    bottom: 10%;
+    width: 100%;
+    transform: scale(2);
+    height: 50vh;
+    z-index: 10;
+}
+.zoom #moon{
+    position: absolute;
+    top: 0%;
+    right: 30%;
+    width: 100%;
+    z-index: 9;
+}
+.zoom #text{
+    top: -70%;
+    position: absolute;
+    right: 0%;
+    width: 100%;
+    z-index: 100;
+}
+.content{
+    color: #fff;
+    background: #232323;
+    padding: 10%;
+}
+.content h2{
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+.content p{
+    font-size: 1.2em;
+}
+
+/* small screen */
+@media(max-width:900px){
+    .zoom #text{
+        position: absolute;
+        top: 0%;
+        right: 30%;
+        width: 100%;
+        z-index: 9;
+    }
+}
+/* this is for viewing in small screen devices */
