@@ -28,8 +28,16 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: var(--text-color);
-  background: var(--background-color);
+  color: var(--text-color) !important; 
+  background: var(--background-color) !important;
+}
+.text-color{
+  color: var(--text-color) !important; 
+ 
+}
+.section-bg{
+  color: var(--text-color) !important; 
+  background: var(--background-color) !important;
 }
 
 * {
@@ -38,6 +46,9 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+a{
+   text-decoration:none;
 }
 
 ::placeholder{

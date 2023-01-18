@@ -6,11 +6,11 @@
 }
 /* the banner section code */
 .zoom{
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     position: relative;
     overflow: hidden;
-    background: url(./images/stars\ bg.png);
+    background-image:url(./images/bg.png);
     background-position: center;
     background-size: cover;
 }
@@ -31,6 +31,15 @@
     width: 100%;
     transform: scale(2);
     height: 50vh;
+    z-index: 13;
+}
+.zoom #layer2{
+    position: absolute;
+    left: 0%;
+    bottom: 10%;
+    width: 100%;
+    transform: scale(2);
+    height: 50vh;
     z-index: 10;
 }
 .zoom #moon{
@@ -38,7 +47,7 @@
     top: 0%;
     right: 30%;
     width: 100%;
-    z-index: 9;
+    z-index: 12;
 }
 .zoom #text{
     top: -70%;
@@ -67,7 +76,6 @@
         top: 0%;
         right: 30%;
         width: 100%;
-        z-index: 9;
     }
 }
 /* this is for viewing in small screen devices */
