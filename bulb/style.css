@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* most styling is just basic css and animation */
+body{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+h2{
+    line-height: 0.7em;
+    outline: none;
+    font-size: 6em;
+    font-weight: 600;
+    color: #0e3742;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    cursor: pointer;
+    animation: animate 5s linear infinite;
+    -webkit-box-reflect: below 20px linear-gradient(transparnt,rgba(243, 17, 17, 0.267));
+}
+@keyframes animate{
+    0%,18%,20.5%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #083f4e;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff,
+        0 0 80px #fff,
+        0 0 120px #fff,
+        0 0 160px #fff,
+        0 0 300px #fff,
+        0 0 240px #fff;
+    }
+}
+h2 span{
+    transition: 0.5s;
+}
+h2:hover span:nth-child(1){
+    margin-right: 10px;
+}
+h2:hover span:nth-child(1)::after{
+    content: " :)";
+}
+h2:hover span:nth-child(2){
+    margin-left: 40px;
+}
+h2:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 120px #fff,
+    0 0 160px #fff;
+}
