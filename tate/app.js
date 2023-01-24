@@ -58,6 +58,7 @@
           }
       });
     }
+    // animate each transformation
     function animateTransform(elem,sx,sy,angle,duration) {
       var td = tx = ty =0;
       $({x: 0, y:0, deg:0}).animate({x: sx, y:sy, deg:angle}, {
