@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--important meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Portfolio web</title>
+</head>
+<body>
+<!--header section-->
+    <header id="header">
+        <div class="container">
+            <nav class="navigation">
+               <a href="index.html"><h3  class="logo">ROSE <span>WINDY</span></h3></a>
+               <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+               </ul>
+            </nav>
+            <div class="header-text">
+                <p>MODEL</p>
+                <h1>Hello,I am <br> <span>ROSE</span> <br> WINDY</h1>
+            </div>
+            <div class="pic">
+                <img src="./images/pexels-alex-urezkov-12484871.jpg">
+            </div>
+        </div>
+
+    </header>
+
+<!--responsive side navigation-->
+    <div id="side-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>              
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menu-btn">
+        <img src="./images/menu.png" id="menu">
+    </div>
+<!--about section-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/pexels-alex-urezkov-12484876.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nulla deserunt omnis adipisci aperiam quaerat eius quas, molestias sapiente, nesciunt optio beatae sint eos voluptas at. Suscipit, accusamus? Debitis, deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt beatae quam ipsum veniam, quidem velit sequi recusandae ullam, nemo, doloremque sit numquam omnis esse optio cum provident quibusdam dolorum veritatis. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>MODEL</span><br>Clothes model</li>
+                            <li><span>TALENTS</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                            <li><span>HOBIES</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience"> 
+                        <ul>
+                            <li><span>2022 - current</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                            <li><span>2017-2022</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                            <li><span>2014-2017</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                            <li><span>2011-2014</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                            <li><span>2014</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                            <li><span>2012</span><br>Lorem ipsum dolor sit amet consectetur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">services</h1>
+            <div class="services-list">
+                <div>
+                    <h1>ACHEIVEMENT</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque officia quos exercitationem necessitatibus velit reiciendis facilis repellendus, laborum quia, atque unde cupiditate et rerum consectetur impedit, recusandae dignissimos quam commodi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h1>TALENTS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque officia quos exercitationem necessitatibus velit reiciendis facilis repellendus, laborum quia, atque unde cupiditate et rerum consectetur impedit, recusandae dignissimos quam commodi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h1>HOBIES</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque officia quos exercitationem necessitatibus velit reiciendis facilis repellendus, laborum quia, atque unde cupiditate et rerum consectetur impedit, recusandae dignissimos quam commodi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+      <!--contact section-->
+      <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p>Contact@example.com</p>
+                    <p>phone num <br> <br> 012345567</p>
+                    <a href="#" download><button type="button" class="btn2">Download CV.</button></a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>copyright. Made by washington maina</p>
+        </div>
+
+      </section>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="./js/script.js"></script>
+<script src="./js/javascript.js"></script>
+</body>
+</html>
