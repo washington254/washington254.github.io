@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D on a Webpage</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+<body>
+  <script type="importmap">
+    {
+      "imports":{
+        "three":"./build/three.module.js",
+        "OrbitControls":"./js/OrbitControls.js",
+        "GLTFLoader":"./js/GLTFLoader.js",
+        "FBXLoader":"./js/FBXLoader.js"
+      }
+    }
+  
+  </script>
+  <script src="./main.js" type="module"></script>
+  <section class="header">
+    <nav>
+        <!-- this is the navigation -->
+        <a href="index.html"><h1 class="logo">WASHINGTON </h1></a>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">SERVICES</a></li>
+        </ul>
+    </nav>
+    <div class="text-box">
+        <!-- this is the text box -->
+        <h1><span class="auto-type"></span></h1>
+        <p>Here it's all about websites, programming<br> Graphic designing and Having Fun</p>
+        <a href="#">Like</a>
+        <a href="#" class="btn">SUBSCRIBE</a>
+    </div>
+     <div id="model"></div>
+  </section>
+  <div class="row">
+    <div class="page">
+      
+    
+    <script src="./typed.js-master/lib/typed.js"></script>
+    <script>
+        //this is the script for typing effect
+        var typed = new Typed(".auto-type", {
+            strings: ["Hey there","Do You love Programming?","Want To See Beautifull creations?","Follow me for more","Like and Subscribe ;)","Awesome Projects on the way"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+  
+      <div class="title">
+        <div class="row">
+          <div class="titleText">
+            Remember to Subscribe!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
