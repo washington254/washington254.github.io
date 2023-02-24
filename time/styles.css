@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    padding: 0px 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./bg.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: animate 5s ease-in-out infinite;
+    overflow: hidden;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+   100%{
+        transform: translateY(10px);
+    }
+    
+}
+.box{
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    backdrop-filter: blur(3px);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation: animate 5s ease-in-out infinite;
+    cursor: pointer;
+}
+@media(max-width:900px){
+    .box{
+        width: 350px;
+        height: 360px;
+    }
+}
+
+section{
+    position: relative;
+}
+.clock{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(transparent,rgba(255,255,255,0.2)), url(./clock.png);
+    background-size: cover;
+    border-radius: 50%;
+    backdrop-filter: blur(2px);
+    border: 1px solid  #fff;
+    border-bottom: none;
+    border-right: none;
+    filter: drop-shadow(0px 0px 10px blue) drop-shadow(0px 0px 30px blue) drop-shadow(0px 0px 60px blue) drop-shadow(0px 0px 160px blue) ;
+}
+.clock::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.hour,.min,.sec{
+    position: absolute;
+}
+.hour, .hr{
+    width: 160px;
+    height: 160px;
+}
+.min, .mn{
+    width: 190px;
+    height: 190px;
+}
+.sec, .sc{
+    width: 230px;
+    height: 230px;
+}
+.hr,.mn,.sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: red;
+    z-index: 11;
+    border-radius: 6px;
+}
+.mn::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: crimson;
+    z-index: 12;
+    border-radius: 6px;
+}
+#current-time{
+    color: #fff;
+    font-size: 36px;
+    padding-top: 60px;
+}
+.sc::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: red;
+    z-index: 11;
+    border-radius: 6px;
+}
