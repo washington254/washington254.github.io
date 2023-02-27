@@ -10,10 +10,10 @@
 <body>
     <!--header of the website-->
     <header>
-        <!--navbar start-->
-        <nav class="navbar">
+         <!--navbar start-->
+         <nav class="navbar">
             <div class="navbar-left">
-                <a href="./index.html" class="logo"><img src="/images/logo.png"></a>
+                <a href="./index.html" class="logo"><img src="./images/logo.png"></a>
                 <div class="search-box">
                     <img src="./images/search.png">
                     <input type="text" placeholder="Search">
@@ -30,7 +30,7 @@
             </div>
             <div class="navbar-right" onclick="openpopup()">
                 <div class="online">
-                    <img src="./images/user-1.png" class="nav-profile-img">
+                    <img src="./images/user-1.jpg" class="nav-profile-img">
                 </div>
             </div>
 
@@ -38,13 +38,17 @@
             <div class="profile-menu-wrap">
                 <div class="profile-menu">
                     <div class="user-info">
-                        <img src="./images/user-1.png">
+                        <img src="./images/user-1.jpg">
                         <div>
-                            <h3>Rayan Walton</h3>
-                            <a href="#">See Your Profile</a>
+                            <h3>OMONDI TIMON</h3>
+                            <a href="profile.html">See Your Profile</a>
                         </div>
                     </div>
                     <hr>
+                    <div class="btn btn-primary ml-lg-3 darkmode" id="dark">
+                        <span id="dark-text">Light</span>
+                        <img src="./images/sun.png" id="dark-icon">
+                    </div>
                     <a href="#" class="profile-menu-link">
                         <img src="./images/feedback.png">
                         <p>Give Feedback</p>
@@ -72,28 +76,29 @@
                     </a>
                 </div>
             </div>
+
+
         </nav>
-        
+         <!--navbar end-->
         <!--container for profile-->
         <div class="container">
             <div class="profile-main">
                 <div class="profile-container">
                     <img src="./images/cover-pic.png" width="100%">
                     <div class="profile-container-inner">
-                        <img src="./images/user-1.png" class="profile-pic">
-                        <h1>Rayan Walton</h1>
-                        <b>Web Developer at Microsoft | Former Developer at Datastick
-                            and Intern at Office.
+                        <img src="./images/user-1.jpg" class="profile-pic">
+                        <h1>OMONDI TIMON</h1>
+                        <b> Former kickboxer, Ex marine, Ex navy, Ex president of the United States Retired Commando.
                         </b>
-                        <p>San Francisco, United States &middot; <a href="#">contact info</a> </p>
+                        <p> &middot; <a href="#">contact info</a> </p>
                         <div class="mutual-connection">
                             <img src="./images/user-2.png">
-                            <span>1 mutual connection:  Orlando Diggs</span>
+                            <span>1 mutual connection:  Washington Maina</span>
 
                         </div>
                         <div class="profile-btn">
                             <a href="#" class="primary-btn"><img src="./images/connect.png">Connect</a>
-                            <a href="#"><img src="./images/chat.png">Message</a>
+                            <a href="#" class="primary-btn"><img src="./images/chat.png">Message</a>
                         </div>
                     </div>
                 </div>
@@ -210,7 +215,7 @@
                     <small>Ad &middot; &middot; &middot;</small>
                     <p>Master The Five Principles Of Web Design</p>
                     <div>
-                        <img src="./images/user-1.png">
+                        <img src="./images/user-1.jpg">
                         <img src="./images/mi-logo.png">
                     </div>
                     <b>Brand And Demand in Xioami</b>
@@ -243,7 +248,7 @@
                     </div>
                    </div>
                    <div  class="sidebar-people-row">
-                    <img src="./images/user-1.png">
+                    <img src="./images/user-1.jpg">
                     <div>
                         <h2>Samai Saodsos</h2>
                         <p>Head Of Marketting at Alibaba</p>
@@ -280,10 +285,7 @@
 
     </header>
     
-
-
-
-
+<script src="./dark.js"></script>
 <script src="./app.js"></script>
 </body>
 </html>
