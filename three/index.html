@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HOUSY</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+       <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./static/favicon/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <nav>
+            <h2 class="logo">DREAM HOUSE</h2>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">LIKE AND SUBSCRIBE :)</a></li>
+            </ul>
+        </nav>
+        <section class="threejs-scene"></section>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
+        <script src="./script.js" type="module"></script>
+    </body>
+</html>

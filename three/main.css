@@ -1,0 +1,58 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	overscroll-behavior: none;
+}
+.remove{
+	opacity: 0;
+}
+nav{
+	background: rgb(21,9,9,0.3);
+	display: flex;
+	padding-top: 5px;
+    align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	animation: fade-in 6s linear forwards;
+}
+@keyframes fade-in{
+	from{
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+}
+nav h2{
+	cursor: pointer;
+	color: #fff;
+	padding-left: 30px;
+	font-size: 26px;
+	font-weight: 600;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 30px;
+}
+nav ul li{
+	margin-left: 30px;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: blue;
+}
+.threejs-scene{
+	cursor: pointer;
+}
