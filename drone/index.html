@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>X-TECHNOLOGIES</title>
+    <meta charset="utf-8">
+    <meta name="description" content="X-TECHNOLOGIES">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS STYLING  -->
+    <link type="text/css" href="./css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		
+    <!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+
+        <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    
+
+
+  </head>
+  <body>
+    <svg class="hidden">
+			<defs>
+				<symbol id="icon-arrow" viewBox="0 0 24 24">
+					<title>arrow</title>
+					<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+				</symbol>
+				<symbol id="icon-drop" viewBox="0 0 24 24">
+					<title>drop</title>
+					<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+					<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+				</symbol>
+			</defs>
+		</svg>
+       <!-- <model-viewer> HTML element -->
+        <model-viewer src="./models/mech_drone.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/poster.webp" shadow-intensity="1" autoplay auto-rotate camera-orbit="-178.6deg 84.32deg 1.445m" field-of-view="30deg">
+          <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">
+              ENTER AUGMENTED REALITY
+          </button>
+          <div id="ar-prompt">
+              <img src="./images/ar_hand_prompt.png">
+          </div>
+        </model-viewer>  
+
+     <!-- header -->
+    <header class="header">
+      <a href="index.html" class="logo">X-<span>TECHNOLOGIES</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+      </nav>
+   </header>
+
+       <!-- banner section  -->
+       <section class="home" id="home">
+        <div class="home-content">
+            <h1>X<span>-TECHNOLOGIES</span></h1>
+            <h3>We Are <span class="auto-type"></span> </h3>
+            <p>You can start by liking <br> the video and subscribing to <br> the channel for more content just like this</p>
+             <div class="social-media">
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bxl-youtube"></i></a>
+             </div>
+             <a href="#" class="btn">BUY MECH</a>
+        </div>
+    </section>
+    <main class="demo-1">
+      <div class="page-view">
+				<div class="project">
+					<div class="text">
+						<h1>“Get one in your house ”</h1>
+						<p>Photo by PEXELS</p>
+					</div>
+				</div>
+				<div class="project">
+					<div class="text">
+						<h1>“Into the Industries”</h1>
+						<p>Photo by PEXELS</p>
+					</div>
+				</div>
+
+				<div class="project">
+					<div class="text">
+						<h1>“Get into cooking food?”</h1>
+						<p>Photo by PEXELS</p>
+					</div>
+				</div>
+				<div class="project">
+					<div class="text">
+						<h1>“Yeah not a real thing”</h1>
+						<p>Photo by PEXELS</p>
+					</div>
+				</div>
+				<div class="bullets">
+					<div class="arrow previous">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="208.3 352 4.2 6.4" style="enable-background:new 208.3 352 4.2 6.4;" xml:space="preserve">
+							<polygon class="st0" points="212.1,357.3 211.5,358 208.7,355.1 211.5,352.3 212.1,353 209.9,355.1"/>
+						</svg>
+					</div>
+					<div class="arrow next">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="208.3 352 4.2 6.4" style="enable-background:new 208.3 352 4.2 6.4;" xml:space="preserve">
+							<polygon class="st0" points="212.1,357.3 211.5,358 208.7,355.1 211.5,352.3 212.1,353 209.9,355.1"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+    </main>
+
+ 
+    <!-- JAVASCRIPTS  -->
+    <script src="./javascript/zepto.min.js"></script>
+		<script src="./javascript/demo.js"></script>
+    <script src="./javascript/typed.min.js" defer></script>    
+    <script src="./javascript/app.js" defer></script>    
+    <script src="./javascript/script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
